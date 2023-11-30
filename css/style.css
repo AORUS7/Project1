@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300&family=Roboto:ital@0;1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+  }
+  
+  nav{
+    width: 100%;
+    height: auto;
+    background: rgb(81,80,85);
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul li{
+    margin: 30px;
+    /* margin: 0 40px; */
+    
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #d5d5d5;
+    transition: 600ms;
+  }
+  nav ul li a:hover {
+    color: white;
+  }
+
+
+/* Store */
+  #menuList:has(#store):hover ~ #drop-store {
+    height: 200px;
+  }
+
+  #menuList:has(#store):hover ~ #drop-store * {
+    display: block;
+  }
+  #drop-store {
+    padding: 0px;
+    height: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    z-index: 3;
+    transition: height 1s;
+  }
+  
+  #drop-store .column {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  #drop-store a {
+    color: white;
+  }
+
+  #drop-store * {
+    display: none;
+  }
+
+  /* Mac */
+  #menuList:has(#store-mac):hover ~ #drop-mac {
+    height: 200px;
+  }
+
+  #menuList:has(#store-mac):hover ~ #drop-mac * {
+    display: block;
+  }
+
+  #drop-mac {
+    padding: 0px;
+    height: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    z-index: 3;
+    transition: height 1s;
+  }
+  
+  #drop-mac .column {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  #drop-mac a {
+    color: white;
+  }
+
+  #drop-mac * {
+    display: none;
+  }
+
+  .welcome{
+    background-image: url("/Picture/iPhone15Pro2.jpg");
+    width: 100%;
+    height: 683px;
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .welcome #item1{
+      color: white;
+      text-align: center;
+      padding-top: 1em;
+  }
+  .welcome #item2{
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+  }
+
+    .link{
+      padding-top: 1em;
+    } 
+    .link a{
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+    .link li{
+        display: inline-flexbox;
+        gap: 50em;
+    }
+    .link a:visited{
+        color:rgb(0,103,205) ;
+    }
+
+    .iphone15{
+        background-image: url(/Picture/iPhone152.jpg);
+        width: 100%;
+        height: 770px;
+        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .iphone15 h1,h2{
+      color: #000000;
+      text-align: center;
+      padding-top: 1em;
+      margin-top: 10px;
+    }
+    
+
+    .macbookpro{
+        background-image: url(/Picture/MacbookPro2.jpg);
+        width: 100%;
+        height: 783px;
+        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+    }
+
+    .macbookpro #item3{
+      text-align: center;
+      padding-top: 1em;
+    }
+    .macbookpro #item4{
+      color: gray;
+      text-align: center;
+      padding-top: 1em;
+    }
+
+    .ipad{
+      background-image: url(/Picture/ipadgen10.jpg);
+      width: 50%;
+      height: 750px;
+      float: left;
+      background-size: cover; 
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: 10px solid white;
+    }
+    .ipad h1,h2{
+      text-align: center;
+      padding-top: 1em;
+    }
+
+
+    .gift{
+      background-image: url(/Picture/Gift.jpg);
+      width: 50%;
+      height: 750px;
+      float: right;
+      background-size: cover; 
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: 10px solid white;
+    }
+    .gift h1{
+      padding-top: 1em;
+    }
+
+    .applewatch{
+      background-image: url(/Picture/Watch.jpg);
+      width: 50%;
+      height: 750px;
+      float: left;
+      background-size: cover; 
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: 10px solid white;
+      
+    }
+
+    .applewatch h1,h2,h3{
+      padding-top: 1em;
+    }
+
+    .airpods{
+        background-image: url(/Picture/Airpods.jpg);
+        width: 50%;
+        height: 750px;
+        float: right;
+        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat;
+        border: 10px solid white;
+    }
+    .airpods h1{
+      padding-top: 1em;
+    }
+
+    .macbookair{
+      background-image: url(/Picture/Macbookair.jpg);
+      width: 50%;
+      height: 750px;
+      float: left;
+      background-size: cover; 
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: 10px solid white;
+    }
+    .macbookair h1{
+      padding-top: 1em;
+    }
+    .macbookair h2{
+      font-weight: lighter;
+    }
+
+    .imac{
+      background-image: url(/Picture/Imac.jpg);
+      width: 50%;
+      height: 750px;
+      float: left;
+      background-size: cover; 
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: 10px solid white;
+    }
+    .imac h1{
+      padding-top: 1em;
+    }
+
+    .last{
+      background-color: rgba(227, 227, 227, 0.565);
+      padding-left: 15em;
+      padding-right: 15em;
+      font-weight: lighter;
+      padding-top: 142em;
+    }
+    .last h4{
+      font-weight: lighter;
+      font-size: small;
+      margin: 1em;
+      color: gray;
+    }
+
+    .content{
+      display: flex;
+      justify-content: space-between;
+    }
+    .last-button ,.last-button li, .last-button a{
+      list-style: none;
+      text-decoration: none;
+      color: #808080;
+      padding: 5px 0;
+      font-size: 10px;
+    }
+    .last-button > li{
+      color: #000000;
+    }
+    .last-button1 ,.last-button1 li{
+      list-style: none;
+      text-decoration: none;
+      color: #808080;
+      padding: 5px 0;
+      font-size: 10px;
+    }
+    .last-button1 a{
+      color: rgb(67,131,213);
+      text-decoration: underline;
+    }
+  .clear-both{
+    display: none;
+    clear: both;
+  }
+
+    /* @media screen and (max-width: 428px) {
+      left: 50%;
+      margin-bottom: 100%;
+    } */
+    .hamburger{
+      display: none;
+    }
+    @media screen and (max-width: 830px) {
+      .hidden1{
+        display: none;
+      }
+      #menuList{
+        justify-content: space-between;
+      }
+      .search-icon{
+        justify-self: flex-end;
+      }
+      .apple-icon{
+        margin-right: auto;
+      }
+      .product-item{
+        float: none;
+        width: 100%;
+      }
+      .hamburger{
+        display: block;
+        color: white;
+      }
+      .iphone15{
+        width: 100%;
+        height: 570px;
+      }
+      .welcome{
+        font-size: 12px;
+        background-image: url(/Picture/index-column/iphone15pro.jpg);
+        width: 100%;
+        height: 483px;
+        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .macbookpro{
+        background-image: url(/Picture/index-column/macbookpro.jpeg);
+        width: 100%;
+        height: 683px;
+        background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+    }
+    .ipad{
+      width: 100%;
+      height: 590px;
+    }
+    .applewatch{
+      background-image: url(/Picture/Watch.jpg);
+      width: 100%;
+      height: 550px;
+      background-size: cover; 
+      background-position: center center;
+      background-repeat: no-repeat;      
+    }
+    .airpods{
+      width: 100%;
+      height: 600px;
+      font-size: 10x;
+      background-size: cover; 
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .macbookair{
+      width: 100%;
+      height: 470px;
+      font-size: 14px;
+      background-size: cover; 
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .imac{
+      width: 100%;
+      height: 590px;
+      font-size: 14px;
+      background-size: cover; 
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+    @media screen and (max-width: 830px) {
+        .last {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+        }
+
+        .last .last-button {
+          width: 90%;
+          padding-left: 5px;
+        }
+    }

@@ -1,0 +1,1063 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300&family=Roboto:ital@0;1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background: rgb(81,80,85);
+  @media screen and (max-width: 428px) {
+    left: 50%;
+    margin-bottom: 100%;
+    background: black;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  margin: 30px;
+  /* margin: 0 40px; */
+}
+
+nav ul li a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #d5d5d5;
+  transition: 600ms;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+/* Store */
+#menuList:has(#store):hover ~ #drop-store {
+  height: 200px;
+}
+
+#menuList:has(#store):hover ~ #drop-store * {
+  display: block;
+}
+#drop-store {
+  padding: 0px;
+  height: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  z-index: 3;
+  transition: height 1s;
+}
+
+#drop-store .column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#drop-store a {
+  color: white;
+}
+
+#drop-store * {
+  display: none;
+}
+
+/* Mac */
+#menuList:has(#store-mac):hover ~ #drop-mac {
+  height: 200px;
+}
+
+#menuList:has(#store-mac):hover ~ #drop-mac * {
+  display: block;
+}
+
+#drop-mac {
+  padding: 0px;
+  height: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  z-index: 3;
+  transition: height 1s;
+}
+
+#drop-mac .column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#drop-mac a {
+  color: white;
+}
+
+#drop-mac * {
+  display: none;
+}
+.link {
+  padding-top: 1em;
+  
+}
+.link a {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.link li {
+  display: inline-flexbox;
+  gap: 50em;
+}
+.link a:visited {
+  color: rgb(0, 136, 255);
+}
+.link a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 830px) {
+  .link {
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+  }
+
+  .link a {
+    font-size: 21px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: rgb(0, 102, 204);
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+}
+
+.button {
+  background-color: rgb(0, 136, 255);
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+.button2 {
+  background-color: rgb(244, 244, 244);
+  color: rgb(0, 103, 205);
+  font-size: 16px;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px;
+  border: 1px solid rgb(0, 136, 255);
+  /* border-color: rgb(0, 136, 255); */
+}
+.button2:hover {
+  background-color: rgb(0, 136, 255);
+  color: white;
+}
+
+.series9 {
+  background-image: url(/Picture/Watch/watch.jpg);
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.series9 h1,
+.series9 h2,
+.series9 h3 {
+  color: white;
+  padding-top: 1em;
+}
+.series9 button {
+  margin-top: 1em;
+}
+
+.watchultra {
+  background-image: url(/Picture/Watch/watchultra.jpg);
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.watchultra h1,
+.watchultra h2,
+.watchultra h3 {
+  color: black;
+  padding-top: 1em;
+}
+.watchultra button {
+  margin-top: 1em;
+}
+
+.watchse {
+  background-color: rgb(244, 244, 244);
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+.onetab {
+  margin-top: 20px;
+}
+
+.watchse .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#se {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#se h1,
+h3 {
+  color: black;
+  padding-top: 0.5em;
+}
+.watchse .img-container {
+  width: 613px;
+  height: 664px;
+  background-image: url("../Picture/Watch/watchse.jpeg");
+  background-size: cover;
+}
+
+.watchcarbon {
+  background-image: url(/Picture/Watch/watchcarbon.jpg);
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 2em;
+}
+.watchcarbon h1 {
+  padding-top: 4em;
+  font-weight: bolder;
+}
+
+.spec .content{
+  display: flex;
+  justify-content: center;
+  flex: 1 1 0px;
+  
+  @media screen and (max-width: 830px) {
+    flex-wrap: wrap;
+  }
+  
+}
+
+
+.watchcare {
+  background-color: rgb(244, 244, 244);
+  padding: 88px 0px 113px 8%;
+  gap: 8%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2em;
+  margin: 2em;
+}
+.watchcare .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#care {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.watchcare .img-container {
+  width: 186px;
+  height: 207px;
+  background-image: url(/Picture/Watch/watchcare.jpg);
+  background-size: cover;
+}
+
+.watchcare .care h1 {
+  font-size: 50px;
+}
+
+@media screen and (max-width: 830px) {
+   .watchcare {
+    background-color:  rgb(245, 245, 247);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 3em 0;
+   }
+
+   .watchcare .content {
+    width: 260px;
+    height: 138px;
+
+   }
+
+   .watchcare .content h1 {
+    font-size: 32px;
+   }
+
+   .watchcare .content h3 {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica";
+    color: #1d1d1f;
+    text-align: center;
+   }
+}
+
+
+.watchfamily {
+  background-color: rgb(244, 244, 244);
+  padding: 88px 0px 113px 8%;
+  gap: 8%;
+  margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   margin-top: 2em;
+   margin: 2em;
+
+}
+.onetab {
+  margin-top: 20px;
+}
+
+.watchfamily .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#family {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.watchfamily .img-container {
+  width: 559px;
+  height: 387px;
+  background-image: url(/Picture/Watch/family_setup.jpg);
+  background-size: cover;
+}
+
+.watchfamily .img-container-mobile {
+  display: none;
+  width: 328px;
+  height: 235px;
+  background-image: url(/Picture/Watch/family_setup.jpg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 830px) {
+  .watchfamily .img-container-mobile {
+    display: inline-block;
+  }
+
+  .watchfamily .img-container {
+    display: none;
+  }
+  .watchfamily {
+    background-color:  rgb(245, 245, 247);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+   }
+
+   .onetab {
+    display: flex;
+    flex-direction: column;
+
+   }
+}
+#family h1 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+#family h3 {
+  font-weight: lighter;
+}
+
+.fitnessplus {
+  background-color: rgb(244, 244, 244);
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-around;
+  margin: 2em;
+  padding: 3em;
+}
+.fitnessplus .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fitnessplus .content-mobile {
+  display: none;
+}
+
+#fitnessplus {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  & h1 {
+    font-size: 50px;
+  }
+
+  & h3 {
+    font-weight: lighter;
+  }
+}
+.fitnessplus .img-container {
+  width: 528px;
+  height: 543px;
+  background-image: url(/Picture/Watch/fitness_plus.jpg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 830px) {
+  .fitnessplus {
+    background-color:  rgb(245, 245, 247);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 3em 0;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .fitnessplus .img-container {
+    width: 324px;
+    height: 327px;
+   }
+
+   .fitnessplus .content {
+     display: none;
+   }
+
+   .fitnessplus .content-mobile {
+    display: flex;
+  }
+
+  .content-mobile  #fitnessplus {
+
+    & h1 {
+      font-size: 25.2px;
+    }
+
+    & h3 {
+      font-size: 19px;
+    }
+
+    .link {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      & a {
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 17px;
+      }
+    }
+    
+    
+  }
+  
+}
+
+.promotion {
+  padding-top: 3em;
+  padding-bottom: 10em;
+  font-size: 21px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 830px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding: 0;
+    
+    & .getwatch {
+      padding-left: 0;
+    }
+
+    & .applecard {
+      padding-right: 0;
+    }
+  }
+
+}
+.getwatch {
+  text-align: center;
+  float: left;
+  padding-left: 3em;
+
+}
+.getwatch h3 {
+  font-weight: lighter;
+}
+.applecard {
+  text-align: center;
+  float: right;
+  padding-right: 3em;
+}
+.applecard h3 {
+  font-weight: lighter;
+}
+
+.watchstyle {
+  background-image: url(/Picture/Watch/watchstyle.jpg);
+  width: 96%;
+  height: 1000px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 2em;
+  margin-right: 2em;
+}
+.watchstyle h1,
+h2 {
+  font-size: 35px;
+}
+
+@media screen and (max-width: 830px) {
+  .watchstyle {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .watchstyle h1,
+  h2 {
+    font-size: 35px;
+  }
+}
+.whywatchos {
+  margin: 1.5em;
+}
+.whywatch {
+  background-image: url(/Picture/Watch/whywatch.jpg);
+  width: 50%;
+  height: 770px;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0.5em solid white;
+  text-align: center;
+}
+.whywatch h2 {
+  font-weight: 200px;
+  font-size: 18px;
+}
+.watchos {
+  background-image: url(/Picture/Watch/watchos.jpg);
+  width: 50%;
+  height: 770px;
+  float: right;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0.5em solid white;
+  text-align: center;
+  border-left: 2em solid white;
+  
+}
+.watchos h2 {
+  font-weight: 200px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 830px) {
+  .whywatchos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .whywatchos .whywatch, .whywatchos .watchos {
+    width: 100%;
+    margin-bottom: 30px;
+    border-left: 0;
+  }
+}
+
+
+.essentials {
+  margin-top: 15em;
+  margin: 2em;
+}
+.essentials h1 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.essentials .header {
+  padding-top: 20em;
+  padding-bottom: 1em;
+}
+.bands {
+  background-color: #f4f5f6;
+  width: 50%;
+  height: 700px;
+  float: left;
+  border: 0.5px solid white;
+  text-align: center;
+}
+
+.bands .title, .magic .title {
+  padding-top: 1em;
+}
+
+.bands .img-container{
+  background-image: url(/Picture/Watch/band.jpg);
+  width: 100%;
+  height: 390px;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.magic {
+  background-image: url(/Picture/Watch/Airpods2.jpg);
+  width: 50%;
+  height: 700px;
+  float: right;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0.5px solid white;
+  border-left: 2em solid white;
+  text-align: center;
+}
+
+.magic h2 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 830px) {
+  .essentials {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 5px;
+  }
+  .essentials > h1 {
+    padding-top: 72px;
+    padding-bottom: 36px;
+    margin: 0 auto;
+    width: 60%;
+    font-size: 40px;
+    line-height: 1.15;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+
+  .bands, .magic {
+    width: 100%;
+    border-left: 0;
+
+    & h1 {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+.getmore {
+  margin: 1.5em;
+}
+
+.getmore .title {
+  text-align: center;
+  padding-top: 16em;
+  padding-bottom: 2em;
+}
+.getmore h1 {
+  font-size: 50px;
+  padding-top: 1em;
+}
+
+.getmore h2 {
+  padding-top: 0.5em;
+}
+
+@media screen and (max-width: 830px) {
+  .getmore {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .getmore .appleone, .getmore .applemusic{
+    width: 100%;
+    border: none;
+  }
+
+  .getmore .title {
+    padding-bottom: 11px;
+    padding-top: 11px;
+    width: 300px;
+    margin: 24px auto;
+  }
+}
+
+.appleone {
+  background-image: url(/Picture/Watch/one.jpg);
+  width: 50%;
+  height: 600px;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 5px solid white;
+  text-align: center;
+  border-right: 25px solid white;
+}
+.appleone h2 {
+  font-size: 20px;
+}
+.applemusic {
+  background-image: url(/Picture/Watch/music.jpg);
+  width: 50%;
+  height: 600px;
+  float: right;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 5px solid white;
+  text-align: center;
+  color: white;
+}
+.applemusic h2 {
+  font-size: 20px;
+}
+
+/* applewatchse */
+.content{
+  padding-top: 4em;
+}
+.text-light {
+  color: #6e6e73;
+}
+
+.spec-column {
+  width: 300px;
+}
+
+.watch-img-container {
+  width: 100%;
+  height: 256px;
+  background-color: white;
+  padding-left: 2em;
+}
+
+.watch-detail {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5rem;
+}
+
+.watch-detail p {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.product-name {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.price-detail {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy-btn {
+  margin: 16px 0;
+  padding: 3px 10px;
+  background-color: rgb(0, 136, 255);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  
+}
+
+.price-detail a {
+  font-size: 14px;
+  color: rgb(0, 136, 255);
+  text-decoration: none;
+}
+
+.break-line {
+  height: 1px;
+  background-color: #d2d2d7;
+  border: none;
+  margin: 26px 0;
+}
+
+.product-detail {
+  margin-bottom: 44px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.detail-img-container {
+  margin-bottom: 13px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  text-align: center;
+}
+
+.product-detail-header {
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.detail-description {
+  text-align: center;
+  font-size: 14px;
+}
+
+.chip-detail {
+  margin-bottom: 44px;
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heart-rate-detail {
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heart-rate-detail .detail-description p {
+  margin-top: 12px;
+}
+
+
+.lastget {
+  margin: 1.5em;
+}
+.lastget h1 {
+  font-size: 50px;
+}
+
+.lastget .title {
+  text-align: center;
+  padding-top: 19em;
+  padding-bottom: 2em;
+}
+.lastget h1 {
+  font-size: 50px;
+  padding-top: 1em;
+}
+
+.getmore h2 {
+  padding-top: 0.5em;
+}
+.lastget .healthapp{
+  background-image: url(/Picture/Watch/health.jpg);
+  width: 50%;
+  height: 600px;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 5px solid white;
+  text-align: center;
+  border-right: 25px solid white;
+}
+.healthapp h2 {
+  font-size: 20px;
+}
+.lastget .research{
+  background-image: url(/Picture/Watch/research.jpg);
+  width: 50%;
+  height: 600px;
+  float: right;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 5px solid white;
+  text-align: center;
+  color: black;
+}
+.research h2 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 830px) {
+  .lastget {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .lastget .healthapp, .lastget .research{
+    width: 100%;
+    border: none;
+  }
+
+  .getmore .title {
+    padding-bottom: 11px;
+    padding-top: 11px;
+    width: 300px;
+    margin: 24px auto;
+  }
+}
+
+
+.description{
+  background-color: rgba(227, 227, 227, 0.565);
+  padding-left: 17em;
+  padding-right: 15em;
+  font-weight: lighter;
+  margin-top: 76em;
+  padding-top: 1em;
+}
+.description h4{
+  font-weight: lighter;
+  font-size: 10px;
+  margin: 1em;
+  color: gray;
+}
+
+.description .content{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 830px) {
+  .description {
+    padding: 0;
+    margin-top: 5em;
+    margin: 5em auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .description .last-button {
+    width: 90%;
+    padding-left: 5px;
+  }
+
+  .description h4 {
+    border: none;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+  }
+}
+
+
+.last-button ,.last-button li, .last-button a{
+  list-style: none;
+  text-decoration: none;
+  color: #808080;
+  padding: 5px 0;
+  font-size: 10px;
+}
+.last-button > li{
+  color: #000000;
+}
+.last-button1 ,.last-button1 li{
+  list-style: none;
+  text-decoration: none;
+  color: #808080;
+  padding: 5px 0;
+  font-size: 10px;
+}
+.last-button1 a{
+  color: rgb(67,131,213);
+  text-decoration: underline;
+}
+
+.gray-button a{
+  color: #434345;
+  text-decoration: underline;
+}
+.clear-both{
+  display: none;
+  clear: both;
+}
+.hamburger{
+  display: none;
+}
+@media screen and (max-width: 830px) {
+  .hidden1{
+    display: none;
+  }
+  #menuList{
+    justify-content: space-between;
+  }
+  .search-icon{
+    justify-self: flex-end;
+  }
+  .apple-icon{
+    margin-right: auto;
+  }
+  .product-item{
+    float: none;
+    width: 100%;
+  }
+  .hamburger{
+    display: block;
+    color: white;
+  }
+  .series9{
+    width: 100%;
+    height: 55em;
+  }
+  .watchultra{
+    width: 100%;
+    height: 60em;
+    background-size: contain;
+  }
+  .spec-column.spec-row{
+    position: relative;
+  }
+}
